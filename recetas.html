@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AMGA Cookies - Recetas</title>
+  <link rel="icon" href="img/logo.jpg" type="image/png">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <style> 
+    @font-face{font-family:'Poppins';font-weight:700;font-style:normal;src:url('fuentes/Poppins-Bold.ttf') format('truetype');font-display:swap}
+    :root{--pink:#FFC0CB;--choco:#6B4226}
+    body { font-family: 'Poppins', sans-serif; }
+    .navbar { background-color: var(--pink); }
+    .navbar-brand { font-weight: 700; color: var(--choco); }
+    .card { border: none; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .card-title { color: var(--choco); font-weight: 600; }
+    .ingredients { margin-bottom: 1rem; color: #333; }
+    footer { background-color: #fff; border-top: 1px solid #ddd; text-align: center; padding: 15px; color: var(--choco); }
+    footer a { color: var(--choco); margin:0 8px; text-decoration: none; }
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="Logo AMGA Cookies" width="150" height="150" class="me-2">
+        <p>AMGA Cookies</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Inicio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <section class="container text-center my-5">
+    <h1 class="fw-bold" style="color: var(--choco);">Nuestras Recetas</h1>
+    <p>Descubre las galletas más deliciosas hechas con amor y dedicación.</p>
+  </section>
+
+  <!-- Grid de Recetas -->
+  <section class="container my-5">
+    <div class="row g-4">
+
+      <!-- Chispas de Chocolate -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/chispas.jpg" class="card-img-top" alt="Galletas de chispas de chocolate">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Chispas de Chocolate</h5>
+            <ul class="ingredients">
+              <li>Harina de trigo</li>
+              <li>Mantequilla</li>
+              <li>Azúcar morena</li>
+              <li>Huevos</li>
+              <li>Chispas de chocolate</li>
+              <li>Vainilla</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#prepChispas">Ver preparación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avena con Pasas -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/avena.jpg" class="card-img-top" alt="Galletas de avena con pasas">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Avena con Pasas</h5>
+            <ul class="ingredients">
+              <li>Avena en hojuelas</li>
+              <li>Harina integral</li>
+              <li>Mantequilla</li>
+              <li>Azúcar morena</li>
+              <li>Huevos</li>
+              <li>Pasas</li>
+              <li>Canela</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#prepAvena">Ver preparación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mantequilla -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/mantequilla.jpg" class="card-img-top" alt="Galletas de mantequilla">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Mantequilla</h5>
+            <ul class="ingredients">
+              <li>Harina de trigo</li>
+              <li>Mantequilla</li>
+              <li>Azúcar blanca</li>
+              <li>Huevos</li>
+              <li>Vainilla</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#prepMantequilla">Ver preparación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jengibre -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/jengibre.jpg" class="card-img-top" alt="Galletas de jengibre">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Jengibre</h5>
+            <ul class="ingredients">
+              <li>Harina de trigo</li>
+              <li>Mantequilla</li>
+              <li>Azúcar morena</li>
+              <li>Miel o melaza</li>
+              <li>Jengibre en polvo</li>
+              <li>Canela</li>
+              <li>Clavo de olor</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#prepJengibre">Ver preparación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Doble Chocolate -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="img/doblechoco.jpg" class="card-img-top" alt="Galletas de doble chocolate">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Doble Chocolate</h5>
+            <ul class="ingredients">
+              <li>Harina de trigo</li>
+              <li>Mantequilla</li>
+              <li>Azúcar morena</li>
+              <li>Huevos</li>
+              <li>Cacao en polvo</li>
+              <li>Chispas de chocolate</li>
+            </ul>
+            <div class="mt-auto">
+              <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#prepDoble">Ver preparación</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales de preparación -->
+
+  <!-- Chispas -->
+  <div class="modal fade" id="prepChispas" tabindex="-1" aria-labelledby="prepChispasLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="prepChispasLabel">Preparación - Chispas de Chocolate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Precalentar el horno a 180°C.</li>
+            <li>Batir mantequilla con azúcar hasta obtener una mezcla cremosa.</li>
+            <li>Añadir huevos y extracto de vainilla; mezclar bien.</li>
+            <li>Incorporar la harina tamizada y mezclar hasta integrar.</li>
+            <li>Agregar las chispas de chocolate y formar bolitas.</li>
+            <li>Hornear 10–12 minutos o hasta que los bordes estén dorados.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Avena -->
+  <div class="modal fade" id="prepAvena" tabindex="-1" aria-labelledby="prepAvenaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="prepAvenaLabel">Preparación - Avena con Pasas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Precalentar el horno a 180°C.</li>
+            <li>Batir mantequilla con azúcar morena hasta cremar.</li>
+            <li>Añadir huevos y canela; mezclar.</li>
+            <li>Incorporar avena, harina y pasas; mezclar hasta integrar.</li>
+            <li>Formar galletas y hornear 12–15 minutos hasta dorar ligeramente.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mantequilla -->
+  <div class="modal fade" id="prepMantequilla" tabindex="-1" aria-labelledby="prepMantequillaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="prepMantequillaLabel">Preparación - Mantequilla</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Precalentar el horno a 180°C.</li>
+            <li>Batir mantequilla con azúcar hasta obtener una mezcla ligera.</li>
+            <li>Añadir huevo y vainilla; mezclar.</li>
+            <li>Agregar la harina poco a poco hasta formar una masa homogénea.</li>
+            <li>Formar galletas, refrigerar 15 minutos y hornear 10–12 minutos.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jengibre -->
+  <div class="modal fade" id="prepJengibre" tabindex="-1" aria-labelledby="prepJengibreLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="prepJengibreLabel">Preparación - Jengibre</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Precalentar el horno a 180°C.</li>
+            <li>Mezclar mantequilla con azúcar morena y melaza.</li>
+            <li>Añadir huevo y mezclar bien.</li>
+            <li>Incorporar harina y especias (jengibre, canela, clavo) hasta formar masa.</li>
+            <li>Estirar, cortar con moldes, decorar y hornear 8–10 minutos.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Doble Chocolate -->
+  <div class="modal fade" id="prepDoble" tabindex="-1" aria-labelledby="prepDobleLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="prepDobleLabel">Preparación - Doble Chocolate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <ol>
+            <li>Precalentar el horno a 180°C.</li>
+            <li>Batir mantequilla con azúcar morena hasta cremar.</li>
+            <li>Añadir huevos y mezclar.</li>
+            <li>Incorporar harina y cacao en polvo; mezclar hasta integrar.</li>
+            <li>Agregar chispas de chocolate y hornear 10–12 minutos.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>"Autor:Engelveth Altuve"</p>
+    <div>
+      <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
